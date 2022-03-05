@@ -1,0 +1,28 @@
+h1 {
+  text-transform: capitalize;
+  font-family: "Andale Mono";
+  color: #860caf;
+}
+
+button {
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-top: 1rem;
+  background: #860caf;
+  color: #000000;
+}
+
+p {
+  margin-top: 1rem;
+  color: red;
+  width: 90%;
+}
+
+div {
+  margin-top: 1rem;
+
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}

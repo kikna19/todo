@@ -1,0 +1,23 @@
+.check {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  width: 100%;
+  height: 100%;
+  font-family: "Andale Mono";
+
+  &__yes {
+    text-transform: capitalize;
+    background: green;
+    color: white;
+  }
+
+  &__no {
+    text-transform: capitalize;
+    background: red;
+    color: white;
+  }
+}

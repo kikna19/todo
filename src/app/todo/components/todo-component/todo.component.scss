@@ -1,0 +1,111 @@
+@mixin flex-box($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+mat-toolbar-row {
+  width: 100%;
+  height: 100%;
+  background: #151D3B;
+
+
+  nav {
+    @include flex-box(start, space-between);
+    width: 90%;
+    padding-top: 2rem;
+    height: 8rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: linear-gradient(to right, #4d005c, #4f006e, #4c0083, #420099, #2600b1);
+    color: white;
+
+    .main-header {
+      display: inline-flex;
+      align-items: start;
+
+      h1 {
+        text-transform: capitalize;
+        font-family: 'Arial Rounded MT Bold';
+      }
+
+      fa-icon {
+        margin: .3rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+
+    .main-text {
+      @include flex-box(start, start);
+      flex-direction: column;
+      height: 100%;
+      width: 10rem;
+
+      div {
+        display: inline-flex;
+        flex-direction: row;
+
+        h5 {
+          font-family: "Andale Mono";
+          text-transform: capitalize;
+          font-size: .9rem;
+        }
+
+        p {
+          margin-left: .5rem;
+          color: #9f00d7;
+          font-family: "Andale Mono";
+        }
+
+        p:first-letter {
+          text-transform: capitalize;
+          font-size: .9rem;
+        }
+      }
+
+      button {
+        background: #860caf;
+      }
+    }
+  }
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: #5b179b;
+}
+
+
+.add-items {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  height: 6rem;
+  border: .15rem dashed #414141;
+  margin-left: 5%;
+  margin-top: 1rem;
+
+  p {
+    color: #414141;
+    text-transform: capitalize;
+  }
+
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-header h1, fa-icon{
+    font-size: 1.2rem!important;
+
+  }
+}

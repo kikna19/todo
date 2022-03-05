@@ -1,0 +1,67 @@
+.item-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2rem;
+  border: .1rem solid #a420a2;
+
+  ::ng-deep
+  .mat-checkbox-checked.mat-accent
+  .mat-checkbox-background,
+  .mat-checkbox-indeterminate.mat-accent
+  .mat-checkbox-background {
+    background-color: #36108c;
+  }
+
+  .item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    h2 {
+      text-transform: capitalize;
+      font-family: Optima;
+      color: white;
+    }
+
+    &__ingredients {
+      display: inline-flex;
+      flex-wrap: wrap;
+
+      span {
+        background: #414141;
+        border-radius: 1rem;
+        padding: .2rem;
+        text-transform: capitalize;
+        font-family: Verdana;
+        margin-right: 1rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .delete {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+
+    &__ask {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+      color: white;
+      font-family: Verdana;
+      width: 100%;
+    }
+  }
+}
